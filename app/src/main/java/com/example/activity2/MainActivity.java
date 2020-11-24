@@ -44,4 +44,25 @@ t.show();
 
 }
 
+protected void onStart(){
+        super.onStart();
+        Toast.makeText(MainActivity.this,"Start",Toast.LENGTH_SHORT).show();
+}
+    protected void onResume(){
+        super.onResume();
+        Toast.makeText(MainActivity.this,"onResume",Toast.LENGTH_SHORT).show();
+    }
+    protected void onPause(){
+        super.onPause();
+        Toast.makeText(MainActivity.this,"onPause",Toast.LENGTH_SHORT).show();
+    }
+    protected void onStop(){
+        super.onStop();
+        Toast.makeText(MainActivity.this,"onStop",Toast.LENGTH_SHORT).show();
+    }
+    protected void onDestroy(){
+        super.onDestroy();
+        Toast.makeText(MainActivity.this,"onDestroy",Toast.LENGTH_SHORT).show();
+    }
+
 }
